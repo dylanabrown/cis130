@@ -1,0 +1,155 @@
+/* external style sheet for index.html and movies.html */
+html {
+	font-family: sans-serif, Arial, Helvetica;
+	background-color: red;
+	margin: 0 auto;
+}
+body {
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+}
+a:link {
+	text-decoration: none;
+	color: black;
+}
+a:visited {
+	color: white;
+}
+a:hover {
+	color: grey;
+}
+.container {
+	background-color: orange;
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 7px solid black;
+}
+nav {
+	max-width: 1200px;
+	background-color: gold;
+	text-align: center;
+	margin: 0 auto;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+nav p {
+	display: inline;
+	padding: 3%;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.leftfloat {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 2%;
+}
+.rightfloat {
+	float: right;
+	width: 200px;
+	height: 200px;
+	margin: 2%;
+}
+article {
+	background-color: gold;
+	margin: 0 auto;
+	max-width: 975px;
+	height: 250px;
+	border-radius: 25px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border: 1px solid black;
+}
+article h2 {
+	padding: 2%;
+	font-size: 22pt;
+	font-weight: bolder;
+}
+article h3 {
+	font-size: 20pt;
+}
+article p {
+	margin: 2%;
+	font-size: 18pt;
+}
+.synopsis {
+	height: 500px;
+}
+#link {
+	color: black;
+}
+footer {
+	background-color: yellow;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 1200px;
+	border-top: 3px solid black;
+	font-weight: bold;
+	height: 50px;
+}
+/* small screen styles */
+@media screen and (max-width: 400px) {
+	h2, h3 {
+		text-align: center;
+	}
+	nav p {
+		display: block;
+		margin: 0 auto;
+	}
+	article {
+		height: 375px;
+		margin: 0.5em;
+		padding: 0.5em;
+	}
+	article img {
+		width: 100px;
+		margin: 0 auto;
+		display: none;
+	}
+	
+	.synopsis {
+		height: 950px;
+	}
+}
+/* tablet screen styles */
+@media screen and (min-width: 401px) {
+	body {
+		
+	}
+	article {
+		height: 375px;
+	}
+	article img {
+		width: 150px;
+		margin: 0 auto;
+	}
+	.synopsis {
+		height: 800px;
+	}
+	
+}
+/* standard screen styles */
+@media screen and (min-width: 700px) {
+	body {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+	article {
+		height: 300px;
+		margin: 1em;
+	}
+	.synopsis {
+		height: 550px;
+	}
+}
+/* large screen styles */
+@media screen and (min-width: 1200px) {
+	body {
+		width: 1200px;
+	}
+	article {
+		height: 250px;
+	}
+}
